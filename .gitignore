@@ -307,3 +307,4 @@ gradle-app.setting
 # End of https://www.gitignore.io/api/java,macos,linux,gradle,windows,eclipse,intellij,intellij+iml,intellij+all
 
 target
+*.DS_Store
