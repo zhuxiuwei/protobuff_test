@@ -25,7 +25,7 @@ public final class AddressBookProtos {
     /**
      * <code>required string name = 1;</code>
      */
-    String getName();
+    java.lang.String getName();
     /**
      * <code>required string name = 1;</code>
      */
@@ -48,7 +48,7 @@ public final class AddressBookProtos {
     /**
      * <code>optional string email = 3;</code>
      */
-    String getEmail();
+    java.lang.String getEmail();
     /**
      * <code>optional string email = 3;</code>
      */
@@ -58,12 +58,12 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    java.util.List<Person.PhoneNumber>
+    java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber> 
         getPhonesList();
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    Person.PhoneNumber getPhones(int index);
+    com.example.tutorial.AddressBookProtos.Person.PhoneNumber getPhones(int index);
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
@@ -71,13 +71,13 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    java.util.List<? extends Person.PhoneNumberOrBuilder>
+    java.util.List<? extends com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder> 
         getPhonesOrBuilderList();
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    Person.PhoneNumberOrBuilder getPhonesOrBuilder(
-            int index);
+    com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code tutorial.Person}
@@ -97,7 +97,7 @@ public final class AddressBookProtos {
       phones_ = java.util.Collections.emptyList();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -108,7 +108,7 @@ public final class AddressBookProtos {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -140,11 +140,11 @@ public final class AddressBookProtos {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                phones_ = new java.util.ArrayList<PhoneNumber>();
+                phones_ = new java.util.ArrayList<com.example.tutorial.AddressBookProtos.Person.PhoneNumber>();
                 mutable_bitField0_ |= 0x00000008;
               }
               phones_.add(
-                  input.readMessage(PhoneNumber.PARSER, extensionRegistry));
+                  input.readMessage(com.example.tutorial.AddressBookProtos.Person.PhoneNumber.PARSER, extensionRegistry));
               break;
             }
             default: {
@@ -171,15 +171,15 @@ public final class AddressBookProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return AddressBookProtos.internal_static_tutorial_Person_descriptor;
+      return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
+      return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              Person.class, Builder.class);
+              com.example.tutorial.AddressBookProtos.Person.class, com.example.tutorial.AddressBookProtos.Person.Builder.class);
     }
 
     /**
@@ -222,7 +222,7 @@ public final class AddressBookProtos {
       /**
        * @deprecated Use {@link #forNumber(int)} instead.
        */
-      @Deprecated
+      @java.lang.Deprecated
       public static PhoneType valueOf(int value) {
         return forNumber(value);
       }
@@ -258,7 +258,7 @@ public final class AddressBookProtos {
       }
       public static final com.google.protobuf.Descriptors.EnumDescriptor
           getDescriptor() {
-        return Person.getDescriptor().getEnumTypes().get(0);
+        return com.example.tutorial.AddressBookProtos.Person.getDescriptor().getEnumTypes().get(0);
       }
 
       private static final PhoneType[] VALUES = values();
@@ -266,7 +266,7 @@ public final class AddressBookProtos {
       public static PhoneType valueOf(
           com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
         if (desc.getType() != getDescriptor()) {
-          throw new IllegalArgumentException(
+          throw new java.lang.IllegalArgumentException(
             "EnumValueDescriptor is not for this type.");
         }
         return VALUES[desc.getIndex()];
@@ -292,7 +292,7 @@ public final class AddressBookProtos {
       /**
        * <code>required string number = 1;</code>
        */
-      String getNumber();
+      java.lang.String getNumber();
       /**
        * <code>required string number = 1;</code>
        */
@@ -306,7 +306,7 @@ public final class AddressBookProtos {
       /**
        * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
        */
-      PhoneType getType();
+      com.example.tutorial.AddressBookProtos.Person.PhoneType getType();
     }
     /**
      * Protobuf type {@code tutorial.Person.PhoneNumber}
@@ -325,7 +325,7 @@ public final class AddressBookProtos {
         type_ = 1;
       }
 
-      @Override
+      @java.lang.Override
       public final com.google.protobuf.UnknownFieldSet
       getUnknownFields() {
         return this.unknownFields;
@@ -336,7 +336,7 @@ public final class AddressBookProtos {
           throws com.google.protobuf.InvalidProtocolBufferException {
         this();
         if (extensionRegistry == null) {
-          throw new NullPointerException();
+          throw new java.lang.NullPointerException();
         }
         int mutable_bitField0_ = 0;
         com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -358,7 +358,7 @@ public final class AddressBookProtos {
               case 16: {
                 int rawValue = input.readEnum();
                   @SuppressWarnings("deprecation")
-                PhoneType value = PhoneType.valueOf(rawValue);
+                com.example.tutorial.AddressBookProtos.Person.PhoneType value = com.example.tutorial.AddressBookProtos.Person.PhoneType.valueOf(rawValue);
                 if (value == null) {
                   unknownFields.mergeVarintField(2, rawValue);
                 } else {
@@ -388,20 +388,20 @@ public final class AddressBookProtos {
       }
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                PhoneNumber.class, Builder.class);
+                com.example.tutorial.AddressBookProtos.Person.PhoneNumber.class, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder.class);
       }
 
       private int bitField0_;
       public static final int NUMBER_FIELD_NUMBER = 1;
-      private volatile Object number_;
+      private volatile java.lang.Object number_;
       /**
        * <code>required string number = 1;</code>
        */
@@ -411,14 +411,14 @@ public final class AddressBookProtos {
       /**
        * <code>required string number = 1;</code>
        */
-      public String getNumber() {
-        Object ref = number_;
-        if (ref instanceof String) {
-          return (String) ref;
+      public java.lang.String getNumber() {
+        java.lang.Object ref = number_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
         } else {
           com.google.protobuf.ByteString bs = 
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             number_ = s;
           }
@@ -430,11 +430,11 @@ public final class AddressBookProtos {
        */
       public com.google.protobuf.ByteString
           getNumberBytes() {
-        Object ref = number_;
-        if (ref instanceof String) {
+        java.lang.Object ref = number_;
+        if (ref instanceof java.lang.String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           number_ = b;
           return b;
         } else {
@@ -453,14 +453,14 @@ public final class AddressBookProtos {
       /**
        * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
        */
-      public PhoneType getType() {
+      public com.example.tutorial.AddressBookProtos.Person.PhoneType getType() {
         @SuppressWarnings("deprecation")
-        PhoneType result = PhoneType.valueOf(type_);
-        return result == null ? PhoneType.HOME : result;
+        com.example.tutorial.AddressBookProtos.Person.PhoneType result = com.example.tutorial.AddressBookProtos.Person.PhoneType.valueOf(type_);
+        return result == null ? com.example.tutorial.AddressBookProtos.Person.PhoneType.HOME : result;
       }
 
       private byte memoizedIsInitialized = -1;
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         byte isInitialized = memoizedIsInitialized;
         if (isInitialized == 1) return true;
@@ -474,7 +474,7 @@ public final class AddressBookProtos {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
         if (((bitField0_ & 0x00000001) != 0)) {
@@ -486,7 +486,7 @@ public final class AddressBookProtos {
         unknownFields.writeTo(output);
       }
 
-      @Override
+      @java.lang.Override
       public int getSerializedSize() {
         int size = memoizedSize;
         if (size != -1) return size;
@@ -504,15 +504,15 @@ public final class AddressBookProtos {
         return size;
       }
 
-      @Override
-      public boolean equals(final Object obj) {
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
         if (obj == this) {
          return true;
         }
-        if (!(obj instanceof PhoneNumber)) {
+        if (!(obj instanceof com.example.tutorial.AddressBookProtos.Person.PhoneNumber)) {
           return super.equals(obj);
         }
-        PhoneNumber other = (PhoneNumber) obj;
+        com.example.tutorial.AddressBookProtos.Person.PhoneNumber other = (com.example.tutorial.AddressBookProtos.Person.PhoneNumber) obj;
 
         if (hasNumber() != other.hasNumber()) return false;
         if (hasNumber()) {
@@ -527,7 +527,7 @@ public final class AddressBookProtos {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public int hashCode() {
         if (memoizedHashCode != 0) {
           return memoizedHashCode;
@@ -547,69 +547,69 @@ public final class AddressBookProtos {
         return hash;
       }
 
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           java.nio.ByteBuffer data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           java.nio.ByteBuffer data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           com.google.protobuf.ByteString data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static PhoneNumber parseFrom(byte[] data)
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(byte[] data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           byte[] data,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data, extensionRegistry);
       }
-      public static PhoneNumber parseFrom(java.io.InputStream input)
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
-      public static PhoneNumber parseDelimitedFrom(java.io.InputStream input)
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseDelimitedFrom(java.io.InputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input);
       }
-      public static PhoneNumber parseDelimitedFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseDelimitedFrom(
           java.io.InputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           com.google.protobuf.CodedInputStream input)
           throws java.io.IOException {
         return com.google.protobuf.GeneratedMessageV3
             .parseWithIOException(PARSER, input);
       }
-      public static PhoneNumber parseFrom(
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber parseFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
@@ -617,23 +617,23 @@ public final class AddressBookProtos {
             .parseWithIOException(PARSER, input, extensionRegistry);
       }
 
-      @Override
+      @java.lang.Override
       public Builder newBuilderForType() { return newBuilder(); }
       public static Builder newBuilder() {
         return DEFAULT_INSTANCE.toBuilder();
       }
-      public static Builder newBuilder(PhoneNumber prototype) {
+      public static Builder newBuilder(com.example.tutorial.AddressBookProtos.Person.PhoneNumber prototype) {
         return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
       }
-      @Override
+      @java.lang.Override
       public Builder toBuilder() {
         return this == DEFAULT_INSTANCE
             ? new Builder() : new Builder().mergeFrom(this);
       }
 
-      @Override
+      @java.lang.Override
       protected Builder newBuilderForType(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         Builder builder = new Builder(parent);
         return builder;
       }
@@ -643,18 +643,18 @@ public final class AddressBookProtos {
       public static final class Builder extends
           com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
           // @@protoc_insertion_point(builder_implements:tutorial.Person.PhoneNumber)
-          PhoneNumberOrBuilder {
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder {
         public static final com.google.protobuf.Descriptors.Descriptor
             getDescriptor() {
-          return AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
         }
 
-        @Override
-        protected FieldAccessorTable
+        @java.lang.Override
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internalGetFieldAccessorTable() {
-          return AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
+          return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable
               .ensureFieldAccessorsInitialized(
-                  PhoneNumber.class, Builder.class);
+                  com.example.tutorial.AddressBookProtos.Person.PhoneNumber.class, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder.class);
         }
 
         // Construct using com.example.tutorial.AddressBookProtos.Person.PhoneNumber.newBuilder()
@@ -663,7 +663,7 @@ public final class AddressBookProtos {
         }
 
         private Builder(
-            BuilderParent parent) {
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
           super(parent);
           maybeForceBuilderInitialization();
         }
@@ -672,7 +672,7 @@ public final class AddressBookProtos {
                   .alwaysUseFieldBuilders) {
           }
         }
-        @Override
+        @java.lang.Override
         public Builder clear() {
           super.clear();
           number_ = "";
@@ -682,29 +682,29 @@ public final class AddressBookProtos {
           return this;
         }
 
-        @Override
+        @java.lang.Override
         public com.google.protobuf.Descriptors.Descriptor
             getDescriptorForType() {
-          return AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
+          return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_PhoneNumber_descriptor;
         }
 
-        @Override
-        public PhoneNumber getDefaultInstanceForType() {
-          return PhoneNumber.getDefaultInstance();
+        @java.lang.Override
+        public com.example.tutorial.AddressBookProtos.Person.PhoneNumber getDefaultInstanceForType() {
+          return com.example.tutorial.AddressBookProtos.Person.PhoneNumber.getDefaultInstance();
         }
 
-        @Override
-        public PhoneNumber build() {
-          PhoneNumber result = buildPartial();
+        @java.lang.Override
+        public com.example.tutorial.AddressBookProtos.Person.PhoneNumber build() {
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber result = buildPartial();
           if (!result.isInitialized()) {
             throw newUninitializedMessageException(result);
           }
           return result;
         }
 
-        @Override
-        public PhoneNumber buildPartial() {
-          PhoneNumber result = new PhoneNumber(this);
+        @java.lang.Override
+        public com.example.tutorial.AddressBookProtos.Person.PhoneNumber buildPartial() {
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber result = new com.example.tutorial.AddressBookProtos.Person.PhoneNumber(this);
           int from_bitField0_ = bitField0_;
           int to_bitField0_ = 0;
           if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -720,50 +720,50 @@ public final class AddressBookProtos {
           return result;
         }
 
-        @Override
+        @java.lang.Override
         public Builder clone() {
           return super.clone();
         }
-        @Override
+        @java.lang.Override
         public Builder setField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            Object value) {
+            java.lang.Object value) {
           return super.setField(field, value);
         }
-        @Override
+        @java.lang.Override
         public Builder clearField(
             com.google.protobuf.Descriptors.FieldDescriptor field) {
           return super.clearField(field);
         }
-        @Override
+        @java.lang.Override
         public Builder clearOneof(
             com.google.protobuf.Descriptors.OneofDescriptor oneof) {
           return super.clearOneof(oneof);
         }
-        @Override
+        @java.lang.Override
         public Builder setRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            int index, Object value) {
+            int index, java.lang.Object value) {
           return super.setRepeatedField(field, index, value);
         }
-        @Override
+        @java.lang.Override
         public Builder addRepeatedField(
             com.google.protobuf.Descriptors.FieldDescriptor field,
-            Object value) {
+            java.lang.Object value) {
           return super.addRepeatedField(field, value);
         }
-        @Override
+        @java.lang.Override
         public Builder mergeFrom(com.google.protobuf.Message other) {
-          if (other instanceof PhoneNumber) {
-            return mergeFrom((PhoneNumber)other);
+          if (other instanceof com.example.tutorial.AddressBookProtos.Person.PhoneNumber) {
+            return mergeFrom((com.example.tutorial.AddressBookProtos.Person.PhoneNumber)other);
           } else {
             super.mergeFrom(other);
             return this;
           }
         }
 
-        public Builder mergeFrom(PhoneNumber other) {
-          if (other == PhoneNumber.getDefaultInstance()) return this;
+        public Builder mergeFrom(com.example.tutorial.AddressBookProtos.Person.PhoneNumber other) {
+          if (other == com.example.tutorial.AddressBookProtos.Person.PhoneNumber.getDefaultInstance()) return this;
           if (other.hasNumber()) {
             bitField0_ |= 0x00000001;
             number_ = other.number_;
@@ -777,7 +777,7 @@ public final class AddressBookProtos {
           return this;
         }
 
-        @Override
+        @java.lang.Override
         public final boolean isInitialized() {
           if (!hasNumber()) {
             return false;
@@ -785,16 +785,16 @@ public final class AddressBookProtos {
           return true;
         }
 
-        @Override
+        @java.lang.Override
         public Builder mergeFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
             throws java.io.IOException {
-          PhoneNumber parsedMessage = null;
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber parsedMessage = null;
           try {
             parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
           } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-            parsedMessage = (PhoneNumber) e.getUnfinishedMessage();
+            parsedMessage = (com.example.tutorial.AddressBookProtos.Person.PhoneNumber) e.getUnfinishedMessage();
             throw e.unwrapIOException();
           } finally {
             if (parsedMessage != null) {
@@ -805,7 +805,7 @@ public final class AddressBookProtos {
         }
         private int bitField0_;
 
-        private Object number_ = "";
+        private java.lang.Object number_ = "";
         /**
          * <code>required string number = 1;</code>
          */
@@ -815,18 +815,18 @@ public final class AddressBookProtos {
         /**
          * <code>required string number = 1;</code>
          */
-        public String getNumber() {
-          Object ref = number_;
-          if (!(ref instanceof String)) {
+        public java.lang.String getNumber() {
+          java.lang.Object ref = number_;
+          if (!(ref instanceof java.lang.String)) {
             com.google.protobuf.ByteString bs =
                 (com.google.protobuf.ByteString) ref;
-            String s = bs.toStringUtf8();
+            java.lang.String s = bs.toStringUtf8();
             if (bs.isValidUtf8()) {
               number_ = s;
             }
             return s;
           } else {
-            return (String) ref;
+            return (java.lang.String) ref;
           }
         }
         /**
@@ -834,11 +834,11 @@ public final class AddressBookProtos {
          */
         public com.google.protobuf.ByteString
             getNumberBytes() {
-          Object ref = number_;
+          java.lang.Object ref = number_;
           if (ref instanceof String) {
             com.google.protobuf.ByteString b = 
                 com.google.protobuf.ByteString.copyFromUtf8(
-                    (String) ref);
+                    (java.lang.String) ref);
             number_ = b;
             return b;
           } else {
@@ -849,7 +849,7 @@ public final class AddressBookProtos {
          * <code>required string number = 1;</code>
          */
         public Builder setNumber(
-            String value) {
+            java.lang.String value) {
           if (value == null) {
     throw new NullPointerException();
   }
@@ -891,15 +891,15 @@ public final class AddressBookProtos {
         /**
          * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
          */
-        public PhoneType getType() {
+        public com.example.tutorial.AddressBookProtos.Person.PhoneType getType() {
           @SuppressWarnings("deprecation")
-          PhoneType result = PhoneType.valueOf(type_);
-          return result == null ? PhoneType.HOME : result;
+          com.example.tutorial.AddressBookProtos.Person.PhoneType result = com.example.tutorial.AddressBookProtos.Person.PhoneType.valueOf(type_);
+          return result == null ? com.example.tutorial.AddressBookProtos.Person.PhoneType.HOME : result;
         }
         /**
          * <code>optional .tutorial.Person.PhoneType type = 2 [default = HOME];</code>
          */
-        public Builder setType(PhoneType value) {
+        public Builder setType(com.example.tutorial.AddressBookProtos.Person.PhoneType value) {
           if (value == null) {
             throw new NullPointerException();
           }
@@ -917,13 +917,13 @@ public final class AddressBookProtos {
           onChanged();
           return this;
         }
-        @Override
+        @java.lang.Override
         public final Builder setUnknownFields(
             final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.setUnknownFields(unknownFields);
         }
 
-        @Override
+        @java.lang.Override
         public final Builder mergeUnknownFields(
             final com.google.protobuf.UnknownFieldSet unknownFields) {
           return super.mergeUnknownFields(unknownFields);
@@ -934,18 +934,18 @@ public final class AddressBookProtos {
       }
 
       // @@protoc_insertion_point(class_scope:tutorial.Person.PhoneNumber)
-      private static final PhoneNumber DEFAULT_INSTANCE;
+      private static final com.example.tutorial.AddressBookProtos.Person.PhoneNumber DEFAULT_INSTANCE;
       static {
-        DEFAULT_INSTANCE = new PhoneNumber();
+        DEFAULT_INSTANCE = new com.example.tutorial.AddressBookProtos.Person.PhoneNumber();
       }
 
-      public static PhoneNumber getDefaultInstance() {
+      public static com.example.tutorial.AddressBookProtos.Person.PhoneNumber getDefaultInstance() {
         return DEFAULT_INSTANCE;
       }
 
-      @Deprecated public static final com.google.protobuf.Parser<PhoneNumber>
+      @java.lang.Deprecated public static final com.google.protobuf.Parser<PhoneNumber>
           PARSER = new com.google.protobuf.AbstractParser<PhoneNumber>() {
-        @Override
+        @java.lang.Override
         public PhoneNumber parsePartialFrom(
             com.google.protobuf.CodedInputStream input,
             com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -958,13 +958,13 @@ public final class AddressBookProtos {
         return PARSER;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Parser<PhoneNumber> getParserForType() {
         return PARSER;
       }
 
-      @Override
-      public PhoneNumber getDefaultInstanceForType() {
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumber getDefaultInstanceForType() {
         return DEFAULT_INSTANCE;
       }
 
@@ -972,7 +972,7 @@ public final class AddressBookProtos {
 
     private int bitField0_;
     public static final int NAME_FIELD_NUMBER = 1;
-    private volatile Object name_;
+    private volatile java.lang.Object name_;
     /**
      * <code>required string name = 1;</code>
      */
@@ -982,14 +982,14 @@ public final class AddressBookProtos {
     /**
      * <code>required string name = 1;</code>
      */
-    public String getName() {
-      Object ref = name_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           name_ = s;
         }
@@ -1001,11 +1001,11 @@ public final class AddressBookProtos {
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
-      Object ref = name_;
-      if (ref instanceof String) {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         name_ = b;
         return b;
       } else {
@@ -1029,7 +1029,7 @@ public final class AddressBookProtos {
     }
 
     public static final int EMAIL_FIELD_NUMBER = 3;
-    private volatile Object email_;
+    private volatile java.lang.Object email_;
     /**
      * <code>optional string email = 3;</code>
      */
@@ -1039,14 +1039,14 @@ public final class AddressBookProtos {
     /**
      * <code>optional string email = 3;</code>
      */
-    public String getEmail() {
-      Object ref = email_;
-      if (ref instanceof String) {
-        return (String) ref;
+    public java.lang.String getEmail() {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        String s = bs.toStringUtf8();
+        java.lang.String s = bs.toStringUtf8();
         if (bs.isValidUtf8()) {
           email_ = s;
         }
@@ -1058,11 +1058,11 @@ public final class AddressBookProtos {
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
-      Object ref = email_;
-      if (ref instanceof String) {
+      java.lang.Object ref = email_;
+      if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (String) ref);
+                (java.lang.String) ref);
         email_ = b;
         return b;
       } else {
@@ -1071,17 +1071,17 @@ public final class AddressBookProtos {
     }
 
     public static final int PHONES_FIELD_NUMBER = 4;
-    private java.util.List<PhoneNumber> phones_;
+    private java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber> phones_;
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<PhoneNumber> getPhonesList() {
+    public java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber> getPhonesList() {
       return phones_;
     }
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    public java.util.List<? extends PhoneNumberOrBuilder>
+    public java.util.List<? extends com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder> 
         getPhonesOrBuilderList() {
       return phones_;
     }
@@ -1094,19 +1094,19 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    public PhoneNumber getPhones(int index) {
+    public com.example.tutorial.AddressBookProtos.Person.PhoneNumber getPhones(int index) {
       return phones_.get(index);
     }
     /**
      * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
      */
-    public PhoneNumberOrBuilder getPhonesOrBuilder(
+    public com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
         int index) {
       return phones_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1130,7 +1130,7 @@ public final class AddressBookProtos {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (((bitField0_ & 0x00000001) != 0)) {
@@ -1148,7 +1148,7 @@ public final class AddressBookProtos {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1173,15 +1173,15 @@ public final class AddressBookProtos {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof Person)) {
+      if (!(obj instanceof com.example.tutorial.AddressBookProtos.Person)) {
         return super.equals(obj);
       }
-      Person other = (Person) obj;
+      com.example.tutorial.AddressBookProtos.Person other = (com.example.tutorial.AddressBookProtos.Person) obj;
 
       if (hasName() != other.hasName()) return false;
       if (hasName()) {
@@ -1204,7 +1204,7 @@ public final class AddressBookProtos {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1232,69 +1232,69 @@ public final class AddressBookProtos {
       return hash;
     }
 
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Person parseFrom(byte[] data)
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static Person parseFrom(java.io.InputStream input)
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Person parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.tutorial.AddressBookProtos.Person parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static Person parseDelimitedFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static Person parseFrom(
+    public static com.example.tutorial.AddressBookProtos.Person parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1302,23 +1302,23 @@ public final class AddressBookProtos {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(Person prototype) {
+    public static Builder newBuilder(com.example.tutorial.AddressBookProtos.Person prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1328,18 +1328,18 @@ public final class AddressBookProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:tutorial.Person)
-        PersonOrBuilder {
+        com.example.tutorial.AddressBookProtos.PersonOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return AddressBookProtos.internal_static_tutorial_Person_descriptor;
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                Person.class, Builder.class);
+                com.example.tutorial.AddressBookProtos.Person.class, com.example.tutorial.AddressBookProtos.Person.Builder.class);
       }
 
       // Construct using com.example.tutorial.AddressBookProtos.Person.newBuilder()
@@ -1348,7 +1348,7 @@ public final class AddressBookProtos {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1358,7 +1358,7 @@ public final class AddressBookProtos {
           getPhonesFieldBuilder();
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         name_ = "";
@@ -1376,29 +1376,29 @@ public final class AddressBookProtos {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return AddressBookProtos.internal_static_tutorial_Person_descriptor;
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_Person_descriptor;
       }
 
-      @Override
-      public Person getDefaultInstanceForType() {
-        return Person.getDefaultInstance();
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.Person getDefaultInstanceForType() {
+        return com.example.tutorial.AddressBookProtos.Person.getDefaultInstance();
       }
 
-      @Override
-      public Person build() {
-        Person result = buildPartial();
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.Person build() {
+        com.example.tutorial.AddressBookProtos.Person result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public Person buildPartial() {
-        Person result = new Person(this);
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.Person buildPartial() {
+        com.example.tutorial.AddressBookProtos.Person result = new com.example.tutorial.AddressBookProtos.Person(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -1427,50 +1427,50 @@ public final class AddressBookProtos {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof Person) {
-          return mergeFrom((Person)other);
+        if (other instanceof com.example.tutorial.AddressBookProtos.Person) {
+          return mergeFrom((com.example.tutorial.AddressBookProtos.Person)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(Person other) {
-        if (other == Person.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.tutorial.AddressBookProtos.Person other) {
+        if (other == com.example.tutorial.AddressBookProtos.Person.getDefaultInstance()) return this;
         if (other.hasName()) {
           bitField0_ |= 0x00000001;
           name_ = other.name_;
@@ -1515,7 +1515,7 @@ public final class AddressBookProtos {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         if (!hasName()) {
           return false;
@@ -1531,16 +1531,16 @@ public final class AddressBookProtos {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        Person parsedMessage = null;
+        com.example.tutorial.AddressBookProtos.Person parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (Person) e.getUnfinishedMessage();
+          parsedMessage = (com.example.tutorial.AddressBookProtos.Person) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1551,7 +1551,7 @@ public final class AddressBookProtos {
       }
       private int bitField0_;
 
-      private Object name_ = "";
+      private java.lang.Object name_ = "";
       /**
        * <code>required string name = 1;</code>
        */
@@ -1561,18 +1561,18 @@ public final class AddressBookProtos {
       /**
        * <code>required string name = 1;</code>
        */
-      public String getName() {
-        Object ref = name_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             name_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1580,11 +1580,11 @@ public final class AddressBookProtos {
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
-        Object ref = name_;
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           name_ = b;
           return b;
         } else {
@@ -1595,7 +1595,7 @@ public final class AddressBookProtos {
        * <code>required string name = 1;</code>
        */
       public Builder setName(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1659,7 +1659,7 @@ public final class AddressBookProtos {
         return this;
       }
 
-      private Object email_ = "";
+      private java.lang.Object email_ = "";
       /**
        * <code>optional string email = 3;</code>
        */
@@ -1669,18 +1669,18 @@ public final class AddressBookProtos {
       /**
        * <code>optional string email = 3;</code>
        */
-      public String getEmail() {
-        Object ref = email_;
-        if (!(ref instanceof String)) {
+      public java.lang.String getEmail() {
+        java.lang.Object ref = email_;
+        if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          String s = bs.toStringUtf8();
+          java.lang.String s = bs.toStringUtf8();
           if (bs.isValidUtf8()) {
             email_ = s;
           }
           return s;
         } else {
-          return (String) ref;
+          return (java.lang.String) ref;
         }
       }
       /**
@@ -1688,11 +1688,11 @@ public final class AddressBookProtos {
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
-        Object ref = email_;
+        java.lang.Object ref = email_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (String) ref);
+                  (java.lang.String) ref);
           email_ = b;
           return b;
         } else {
@@ -1703,7 +1703,7 @@ public final class AddressBookProtos {
        * <code>optional string email = 3;</code>
        */
       public Builder setEmail(
-          String value) {
+          java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1735,22 +1735,22 @@ public final class AddressBookProtos {
         return this;
       }
 
-      private java.util.List<PhoneNumber> phones_ =
+      private java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber> phones_ =
         java.util.Collections.emptyList();
       private void ensurePhonesIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          phones_ = new java.util.ArrayList<PhoneNumber>(phones_);
+          phones_ = new java.util.ArrayList<com.example.tutorial.AddressBookProtos.Person.PhoneNumber>(phones_);
           bitField0_ |= 0x00000008;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          PhoneNumber, PhoneNumber.Builder, PhoneNumberOrBuilder> phonesBuilder_;
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder, com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder> phonesBuilder_;
 
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<PhoneNumber> getPhonesList() {
+      public java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber> getPhonesList() {
         if (phonesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(phones_);
         } else {
@@ -1770,7 +1770,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public PhoneNumber getPhones(int index) {
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumber getPhones(int index) {
         if (phonesBuilder_ == null) {
           return phones_.get(index);
         } else {
@@ -1781,7 +1781,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder setPhones(
-          int index, PhoneNumber value) {
+          int index, com.example.tutorial.AddressBookProtos.Person.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1798,7 +1798,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder setPhones(
-          int index, PhoneNumber.Builder builderForValue) {
+          int index, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.set(index, builderForValue.build());
@@ -1811,7 +1811,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public Builder addPhones(PhoneNumber value) {
+      public Builder addPhones(com.example.tutorial.AddressBookProtos.Person.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1828,7 +1828,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          int index, PhoneNumber value) {
+          int index, com.example.tutorial.AddressBookProtos.Person.PhoneNumber value) {
         if (phonesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1845,7 +1845,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          PhoneNumber.Builder builderForValue) {
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.add(builderForValue.build());
@@ -1859,7 +1859,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder addPhones(
-          int index, PhoneNumber.Builder builderForValue) {
+          int index, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder builderForValue) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           phones_.add(index, builderForValue.build());
@@ -1873,7 +1873,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
       public Builder addAllPhones(
-          Iterable<? extends PhoneNumber> values) {
+          java.lang.Iterable<? extends com.example.tutorial.AddressBookProtos.Person.PhoneNumber> values) {
         if (phonesBuilder_ == null) {
           ensurePhonesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1913,14 +1913,14 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public PhoneNumber.Builder getPhonesBuilder(
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder getPhonesBuilder(
           int index) {
         return getPhonesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public PhoneNumberOrBuilder getPhonesOrBuilder(
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder getPhonesOrBuilder(
           int index) {
         if (phonesBuilder_ == null) {
           return phones_.get(index);  } else {
@@ -1930,7 +1930,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<? extends PhoneNumberOrBuilder>
+      public java.util.List<? extends com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder> 
            getPhonesOrBuilderList() {
         if (phonesBuilder_ != null) {
           return phonesBuilder_.getMessageOrBuilderList();
@@ -1941,31 +1941,31 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public PhoneNumber.Builder addPhonesBuilder() {
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder addPhonesBuilder() {
         return getPhonesFieldBuilder().addBuilder(
-            PhoneNumber.getDefaultInstance());
+            com.example.tutorial.AddressBookProtos.Person.PhoneNumber.getDefaultInstance());
       }
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public PhoneNumber.Builder addPhonesBuilder(
+      public com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder addPhonesBuilder(
           int index) {
         return getPhonesFieldBuilder().addBuilder(
-            index, PhoneNumber.getDefaultInstance());
+            index, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.getDefaultInstance());
       }
       /**
        * <code>repeated .tutorial.Person.PhoneNumber phones = 4;</code>
        */
-      public java.util.List<PhoneNumber.Builder>
+      public java.util.List<com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder> 
            getPhonesBuilderList() {
         return getPhonesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          PhoneNumber, PhoneNumber.Builder, PhoneNumberOrBuilder>
+          com.example.tutorial.AddressBookProtos.Person.PhoneNumber, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder, com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder> 
           getPhonesFieldBuilder() {
         if (phonesBuilder_ == null) {
           phonesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              PhoneNumber, PhoneNumber.Builder, PhoneNumberOrBuilder>(
+              com.example.tutorial.AddressBookProtos.Person.PhoneNumber, com.example.tutorial.AddressBookProtos.Person.PhoneNumber.Builder, com.example.tutorial.AddressBookProtos.Person.PhoneNumberOrBuilder>(
                   phones_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -1974,13 +1974,13 @@ public final class AddressBookProtos {
         }
         return phonesBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1991,18 +1991,18 @@ public final class AddressBookProtos {
     }
 
     // @@protoc_insertion_point(class_scope:tutorial.Person)
-    private static final Person DEFAULT_INSTANCE;
+    private static final com.example.tutorial.AddressBookProtos.Person DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new Person();
+      DEFAULT_INSTANCE = new com.example.tutorial.AddressBookProtos.Person();
     }
 
-    public static Person getDefaultInstance() {
+    public static com.example.tutorial.AddressBookProtos.Person getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @Deprecated public static final com.google.protobuf.Parser<Person>
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<Person>
         PARSER = new com.google.protobuf.AbstractParser<Person>() {
-      @Override
+      @java.lang.Override
       public Person parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2015,13 +2015,13 @@ public final class AddressBookProtos {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<Person> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public Person getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.example.tutorial.AddressBookProtos.Person getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2034,12 +2034,12 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    java.util.List<Person>
+    java.util.List<com.example.tutorial.AddressBookProtos.Person> 
         getPeopleList();
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    Person getPeople(int index);
+    com.example.tutorial.AddressBookProtos.Person getPeople(int index);
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
@@ -2047,13 +2047,13 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    java.util.List<? extends PersonOrBuilder>
+    java.util.List<? extends com.example.tutorial.AddressBookProtos.PersonOrBuilder> 
         getPeopleOrBuilderList();
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    PersonOrBuilder getPeopleOrBuilder(
-            int index);
+    com.example.tutorial.AddressBookProtos.PersonOrBuilder getPeopleOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code tutorial.AddressBook}
@@ -2071,7 +2071,7 @@ public final class AddressBookProtos {
       people_ = java.util.Collections.emptyList();
     }
 
-    @Override
+    @java.lang.Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -2082,7 +2082,7 @@ public final class AddressBookProtos {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new NullPointerException();
+        throw new java.lang.NullPointerException();
       }
       int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
@@ -2097,11 +2097,11 @@ public final class AddressBookProtos {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                people_ = new java.util.ArrayList<Person>();
+                people_ = new java.util.ArrayList<com.example.tutorial.AddressBookProtos.Person>();
                 mutable_bitField0_ |= 0x00000001;
               }
               people_.add(
-                  input.readMessage(Person.PARSER, extensionRegistry));
+                  input.readMessage(com.example.tutorial.AddressBookProtos.Person.PARSER, extensionRegistry));
               break;
             }
             default: {
@@ -2128,29 +2128,29 @@ public final class AddressBookProtos {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+      return com.example.tutorial.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
     }
 
-    @Override
-    protected FieldAccessorTable
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
+      return com.example.tutorial.AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              AddressBook.class, Builder.class);
+              com.example.tutorial.AddressBookProtos.AddressBook.class, com.example.tutorial.AddressBookProtos.AddressBook.Builder.class);
     }
 
     public static final int PEOPLE_FIELD_NUMBER = 1;
-    private java.util.List<Person> people_;
+    private java.util.List<com.example.tutorial.AddressBookProtos.Person> people_;
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    public java.util.List<Person> getPeopleList() {
+    public java.util.List<com.example.tutorial.AddressBookProtos.Person> getPeopleList() {
       return people_;
     }
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    public java.util.List<? extends PersonOrBuilder>
+    public java.util.List<? extends com.example.tutorial.AddressBookProtos.PersonOrBuilder> 
         getPeopleOrBuilderList() {
       return people_;
     }
@@ -2163,19 +2163,19 @@ public final class AddressBookProtos {
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    public Person getPeople(int index) {
+    public com.example.tutorial.AddressBookProtos.Person getPeople(int index) {
       return people_.get(index);
     }
     /**
      * <code>repeated .tutorial.Person people = 1;</code>
      */
-    public PersonOrBuilder getPeopleOrBuilder(
+    public com.example.tutorial.AddressBookProtos.PersonOrBuilder getPeopleOrBuilder(
         int index) {
       return people_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
-    @Override
+    @java.lang.Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2191,7 +2191,7 @@ public final class AddressBookProtos {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < people_.size(); i++) {
@@ -2200,7 +2200,7 @@ public final class AddressBookProtos {
       unknownFields.writeTo(output);
     }
 
-    @Override
+    @java.lang.Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2215,15 +2215,15 @@ public final class AddressBookProtos {
       return size;
     }
 
-    @Override
-    public boolean equals(final Object obj) {
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof AddressBook)) {
+      if (!(obj instanceof com.example.tutorial.AddressBookProtos.AddressBook)) {
         return super.equals(obj);
       }
-      AddressBook other = (AddressBook) obj;
+      com.example.tutorial.AddressBookProtos.AddressBook other = (com.example.tutorial.AddressBookProtos.AddressBook) obj;
 
       if (!getPeopleList()
           .equals(other.getPeopleList())) return false;
@@ -2231,7 +2231,7 @@ public final class AddressBookProtos {
       return true;
     }
 
-    @Override
+    @java.lang.Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2247,69 +2247,69 @@ public final class AddressBookProtos {
       return hash;
     }
 
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static AddressBook parseFrom(byte[] data)
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static AddressBook parseFrom(java.io.InputStream input)
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static AddressBook parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static AddressBook parseDelimitedFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static AddressBook parseFrom(
+    public static com.example.tutorial.AddressBookProtos.AddressBook parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2317,23 +2317,23 @@ public final class AddressBookProtos {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @Override
+    @java.lang.Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(AddressBook prototype) {
+    public static Builder newBuilder(com.example.tutorial.AddressBookProtos.AddressBook prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @Override
+    @java.lang.Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @Override
+    @java.lang.Override
     protected Builder newBuilderForType(
-        BuilderParent parent) {
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2343,18 +2343,18 @@ public final class AddressBookProtos {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:tutorial.AddressBook)
-        AddressBookOrBuilder {
+        com.example.tutorial.AddressBookProtos.AddressBookOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
       }
 
-      @Override
-      protected FieldAccessorTable
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_AddressBook_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                AddressBook.class, Builder.class);
+                com.example.tutorial.AddressBookProtos.AddressBook.class, com.example.tutorial.AddressBookProtos.AddressBook.Builder.class);
       }
 
       // Construct using com.example.tutorial.AddressBookProtos.AddressBook.newBuilder()
@@ -2363,7 +2363,7 @@ public final class AddressBookProtos {
       }
 
       private Builder(
-          BuilderParent parent) {
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2373,7 +2373,7 @@ public final class AddressBookProtos {
           getPeopleFieldBuilder();
         }
       }
-      @Override
+      @java.lang.Override
       public Builder clear() {
         super.clear();
         if (peopleBuilder_ == null) {
@@ -2385,29 +2385,29 @@ public final class AddressBookProtos {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
+        return com.example.tutorial.AddressBookProtos.internal_static_tutorial_AddressBook_descriptor;
       }
 
-      @Override
-      public AddressBook getDefaultInstanceForType() {
-        return AddressBook.getDefaultInstance();
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.AddressBook getDefaultInstanceForType() {
+        return com.example.tutorial.AddressBookProtos.AddressBook.getDefaultInstance();
       }
 
-      @Override
-      public AddressBook build() {
-        AddressBook result = buildPartial();
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.AddressBook build() {
+        com.example.tutorial.AddressBookProtos.AddressBook result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @Override
-      public AddressBook buildPartial() {
-        AddressBook result = new AddressBook(this);
+      @java.lang.Override
+      public com.example.tutorial.AddressBookProtos.AddressBook buildPartial() {
+        com.example.tutorial.AddressBookProtos.AddressBook result = new com.example.tutorial.AddressBookProtos.AddressBook(this);
         int from_bitField0_ = bitField0_;
         if (peopleBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
@@ -2422,50 +2422,50 @@ public final class AddressBookProtos {
         return result;
       }
 
-      @Override
+      @java.lang.Override
       public Builder clone() {
         return super.clone();
       }
-      @Override
+      @java.lang.Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.setField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @Override
+      @java.lang.Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @Override
+      @java.lang.Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, Object value) {
+          int index, java.lang.Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @Override
+      @java.lang.Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          Object value) {
+          java.lang.Object value) {
         return super.addRepeatedField(field, value);
       }
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof AddressBook) {
-          return mergeFrom((AddressBook)other);
+        if (other instanceof com.example.tutorial.AddressBookProtos.AddressBook) {
+          return mergeFrom((com.example.tutorial.AddressBookProtos.AddressBook)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(AddressBook other) {
-        if (other == AddressBook.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.tutorial.AddressBookProtos.AddressBook other) {
+        if (other == com.example.tutorial.AddressBookProtos.AddressBook.getDefaultInstance()) return this;
         if (peopleBuilder_ == null) {
           if (!other.people_.isEmpty()) {
             if (people_.isEmpty()) {
@@ -2497,7 +2497,7 @@ public final class AddressBookProtos {
         return this;
       }
 
-      @Override
+      @java.lang.Override
       public final boolean isInitialized() {
         for (int i = 0; i < getPeopleCount(); i++) {
           if (!getPeople(i).isInitialized()) {
@@ -2507,16 +2507,16 @@ public final class AddressBookProtos {
         return true;
       }
 
-      @Override
+      @java.lang.Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        AddressBook parsedMessage = null;
+        com.example.tutorial.AddressBookProtos.AddressBook parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (AddressBook) e.getUnfinishedMessage();
+          parsedMessage = (com.example.tutorial.AddressBookProtos.AddressBook) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2527,22 +2527,22 @@ public final class AddressBookProtos {
       }
       private int bitField0_;
 
-      private java.util.List<Person> people_ =
+      private java.util.List<com.example.tutorial.AddressBookProtos.Person> people_ =
         java.util.Collections.emptyList();
       private void ensurePeopleIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          people_ = new java.util.ArrayList<Person>(people_);
+          people_ = new java.util.ArrayList<com.example.tutorial.AddressBookProtos.Person>(people_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          Person, Person.Builder, PersonOrBuilder> peopleBuilder_;
+          com.example.tutorial.AddressBookProtos.Person, com.example.tutorial.AddressBookProtos.Person.Builder, com.example.tutorial.AddressBookProtos.PersonOrBuilder> peopleBuilder_;
 
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public java.util.List<Person> getPeopleList() {
+      public java.util.List<com.example.tutorial.AddressBookProtos.Person> getPeopleList() {
         if (peopleBuilder_ == null) {
           return java.util.Collections.unmodifiableList(people_);
         } else {
@@ -2562,7 +2562,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public Person getPeople(int index) {
+      public com.example.tutorial.AddressBookProtos.Person getPeople(int index) {
         if (peopleBuilder_ == null) {
           return people_.get(index);
         } else {
@@ -2573,7 +2573,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder setPeople(
-          int index, Person value) {
+          int index, com.example.tutorial.AddressBookProtos.Person value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2590,7 +2590,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder setPeople(
-          int index, Person.Builder builderForValue) {
+          int index, com.example.tutorial.AddressBookProtos.Person.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.set(index, builderForValue.build());
@@ -2603,7 +2603,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public Builder addPeople(Person value) {
+      public Builder addPeople(com.example.tutorial.AddressBookProtos.Person value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2620,7 +2620,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder addPeople(
-          int index, Person value) {
+          int index, com.example.tutorial.AddressBookProtos.Person value) {
         if (peopleBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2637,7 +2637,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder addPeople(
-          Person.Builder builderForValue) {
+          com.example.tutorial.AddressBookProtos.Person.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.add(builderForValue.build());
@@ -2651,7 +2651,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder addPeople(
-          int index, Person.Builder builderForValue) {
+          int index, com.example.tutorial.AddressBookProtos.Person.Builder builderForValue) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           people_.add(index, builderForValue.build());
@@ -2665,7 +2665,7 @@ public final class AddressBookProtos {
        * <code>repeated .tutorial.Person people = 1;</code>
        */
       public Builder addAllPeople(
-          Iterable<? extends Person> values) {
+          java.lang.Iterable<? extends com.example.tutorial.AddressBookProtos.Person> values) {
         if (peopleBuilder_ == null) {
           ensurePeopleIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2705,14 +2705,14 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public Person.Builder getPeopleBuilder(
+      public com.example.tutorial.AddressBookProtos.Person.Builder getPeopleBuilder(
           int index) {
         return getPeopleFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public PersonOrBuilder getPeopleOrBuilder(
+      public com.example.tutorial.AddressBookProtos.PersonOrBuilder getPeopleOrBuilder(
           int index) {
         if (peopleBuilder_ == null) {
           return people_.get(index);  } else {
@@ -2722,7 +2722,7 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public java.util.List<? extends PersonOrBuilder>
+      public java.util.List<? extends com.example.tutorial.AddressBookProtos.PersonOrBuilder> 
            getPeopleOrBuilderList() {
         if (peopleBuilder_ != null) {
           return peopleBuilder_.getMessageOrBuilderList();
@@ -2733,31 +2733,31 @@ public final class AddressBookProtos {
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public Person.Builder addPeopleBuilder() {
+      public com.example.tutorial.AddressBookProtos.Person.Builder addPeopleBuilder() {
         return getPeopleFieldBuilder().addBuilder(
-            Person.getDefaultInstance());
+            com.example.tutorial.AddressBookProtos.Person.getDefaultInstance());
       }
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public Person.Builder addPeopleBuilder(
+      public com.example.tutorial.AddressBookProtos.Person.Builder addPeopleBuilder(
           int index) {
         return getPeopleFieldBuilder().addBuilder(
-            index, Person.getDefaultInstance());
+            index, com.example.tutorial.AddressBookProtos.Person.getDefaultInstance());
       }
       /**
        * <code>repeated .tutorial.Person people = 1;</code>
        */
-      public java.util.List<Person.Builder>
+      public java.util.List<com.example.tutorial.AddressBookProtos.Person.Builder> 
            getPeopleBuilderList() {
         return getPeopleFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          Person, Person.Builder, PersonOrBuilder>
+          com.example.tutorial.AddressBookProtos.Person, com.example.tutorial.AddressBookProtos.Person.Builder, com.example.tutorial.AddressBookProtos.PersonOrBuilder> 
           getPeopleFieldBuilder() {
         if (peopleBuilder_ == null) {
           peopleBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              Person, Person.Builder, PersonOrBuilder>(
+              com.example.tutorial.AddressBookProtos.Person, com.example.tutorial.AddressBookProtos.Person.Builder, com.example.tutorial.AddressBookProtos.PersonOrBuilder>(
                   people_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -2766,13 +2766,13 @@ public final class AddressBookProtos {
         }
         return peopleBuilder_;
       }
-      @Override
+      @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @Override
+      @java.lang.Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -2783,18 +2783,18 @@ public final class AddressBookProtos {
     }
 
     // @@protoc_insertion_point(class_scope:tutorial.AddressBook)
-    private static final AddressBook DEFAULT_INSTANCE;
+    private static final com.example.tutorial.AddressBookProtos.AddressBook DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new AddressBook();
+      DEFAULT_INSTANCE = new com.example.tutorial.AddressBookProtos.AddressBook();
     }
 
-    public static AddressBook getDefaultInstance() {
+    public static com.example.tutorial.AddressBookProtos.AddressBook getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    @Deprecated public static final com.google.protobuf.Parser<AddressBook>
+    @java.lang.Deprecated public static final com.google.protobuf.Parser<AddressBook>
         PARSER = new com.google.protobuf.AbstractParser<AddressBook>() {
-      @Override
+      @java.lang.Override
       public AddressBook parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2807,13 +2807,13 @@ public final class AddressBookProtos {
       return PARSER;
     }
 
-    @Override
+    @java.lang.Override
     public com.google.protobuf.Parser<AddressBook> getParserForType() {
       return PARSER;
     }
 
-    @Override
-    public AddressBook getDefaultInstanceForType() {
+    @java.lang.Override
+    public com.example.tutorial.AddressBookProtos.AddressBook getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2842,7 +2842,7 @@ public final class AddressBookProtos {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    String[] descriptorData = {
+    java.lang.String[] descriptorData = {
       "\n\021addressbook.proto\022\010tutorial\"\333\001\n\006Person" +
       "\022\014\n\004name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(" +
       "\t\022,\n\006phones\030\004 \003(\0132\034.tutorial.Person.Phon" +
@@ -2870,19 +2870,19 @@ public final class AddressBookProtos {
     internal_static_tutorial_Person_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tutorial_Person_descriptor,
-        new String[] { "Name", "Id", "Email", "Phones", });
+        new java.lang.String[] { "Name", "Id", "Email", "Phones", });
     internal_static_tutorial_Person_PhoneNumber_descriptor =
       internal_static_tutorial_Person_descriptor.getNestedTypes().get(0);
     internal_static_tutorial_Person_PhoneNumber_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tutorial_Person_PhoneNumber_descriptor,
-        new String[] { "Number", "Type", });
+        new java.lang.String[] { "Number", "Type", });
     internal_static_tutorial_AddressBook_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_tutorial_AddressBook_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_tutorial_AddressBook_descriptor,
-        new String[] { "People", });
+        new java.lang.String[] { "People", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
